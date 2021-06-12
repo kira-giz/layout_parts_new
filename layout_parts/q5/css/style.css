@@ -1,5 +1,105 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+/* 1のボックスにrelative設定してabsolute指定か、q5__contentにrelative指定かわからぬ */
+
+.q5__content {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #ecf1f2;
+  position: relative;
+  z-index: -1;
+}
+
+.q5__content div {
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.q5__content div:not(:nth-child(9)) {
+  position: absolute;
+}
+
+/* 8 */
+.q5__content div:first-child {
+  background-color: #de70cf;
+  top: 120px;
+  left: 120px;
+  z-index: 8;
+}
+
+.q5__content div:first-child::before {
+  content: '';
+  background-color: #ffefd3;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+/* 5 */
+.q5__content div:nth-child(2) {
+  background-color: #9fd6d2;
+  top: 360px;
+  left: 200px;
+  z-index: 5;
+}
+/* 1 */
+.q5__content div:nth-child(3) {
+  background-color: #ffefd3;
+  left: 200px;
+  top: 40px;
+  z-index: 1;
+}
+/* 7 */
+.q5__content div:nth-child(4) {
+  background-color: #deae70;
+  top: 200px;
+  left: 40px;
+  z-index: 7;
+}
+/* 4 */
+.q5__content div:nth-child(5) {
+  background-color: #8b7a5e;
+  top: 280px;
+  left: 280px;
+  z-index: 4;
+}
+/* 6 */
+.q5__content div:nth-child(6) {
+  background-color: #fffee4;
+  top: 280px;
+  left: 120px;
+  z-index: 6;
+}
+/* 2 */
+.q5__content div:nth-child(7) {
+  background-color: #7084de;
+  top: 120px;
+  left: 280px;
+  z-index: 2;
+
+}
+/* 3 */
+.q5__content div:nth-child(8) {
+  background-color: #d0ecea;
+  top: 200px;
+  left: 360px;
+  z-index: 3;
+}
+/* 9 */
+.q5__content div:nth-child(9) {
+  background-color: #2b69a3;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
 
 /* 回答はここに書いてね */
