@@ -2,4 +2,75 @@
 
 /* 回答はここに書いてね */
 
+/* text-align & margin */
+.q6__box--align,
+.q6__box--margin__text {
+  width: 90px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #e6f2ff;
+}
+
+/*
+margin
+q6__boxにtext-align: leftがかかっているため
+blockにする必要がある。
+*/
+.q6__box__margin__text {
+  display: block;
+}
+
+/* table */
+.q6--table {
+  display: table;
+}
+
+.q6--table__cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* table & flex */
+.q6--table__text,
+.q6--flex__text {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* flex */
+.q6--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* position */
+.q6__box__content {
+  position: relative;
+}
+
+/* 固定 */
+.is-stable__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* 可変 */
+.is-flexible__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
 /* 回答はここに書いてね */
