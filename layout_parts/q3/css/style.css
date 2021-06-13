@@ -32,7 +32,7 @@ td:first-child {
   line-height: 26px;
 }
 
-tr:last-child:not(.q3__table__head) {
+tr:last-child:not(.q3__table-head) {
   border-top: dashed #000 2px;
 }
 
