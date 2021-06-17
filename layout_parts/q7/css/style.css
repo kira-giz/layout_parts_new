@@ -1,5 +1,82 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+/* 共通 */
+.q7__box--all {
+  width: 225px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
 
+/* float */
+.q7__text--left {
+  float: left;
+  /* 他の要素が横に来ても同じだけの余白が空くから */
+  margin-right: 50px;
+}
+.q7__text--right {
+  float: left;
+}
+
+/* table */
+.q7--table__inner {
+  display: table;
+}
+.q7__box--table--left,
+.q7__box--table--right {
+  display: table-cell;
+}
+.q7__box--table--left {
+  vertical-align: middle;
+  padding-right: 25px;
+}
+.q7__box--table--right {
+  padding-left: 25px;
+}
+
+/* inline-block */
+.q7--inlineblock__inner {
+  text-align: center;
+}
+.q7--inlineblock__left,
+.q7--inlineblock__right {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* marginではない謎の余白があるため50pxにするとレイアウトが崩れる */
+.q7--inlineblock__left {
+  margin-right: 45px;
+}
+.q7--inlineblock__right {
+  margin-left: 0;
+}
+
+/* flex */
+.q7--flex__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* margin */
+.q7--margin__left,
+.q7--margin__right {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.q7--margin__left {
+  width: 300px;
+}
+.q7--margin__right {
+  width: 100%;
+  /* 左幅と間隔 */
+  padding-left: 350px;
+  margin-left: -305px;
+}
 /* 回答はここに書いてね */
