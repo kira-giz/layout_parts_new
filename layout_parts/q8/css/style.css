@@ -1,5 +1,39 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.q8__content {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.q8__img {
+  transition: 0.5s all;
+}
+
+.q8__img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.q8__img:hover + .q8__text {
+  /* position: absolute; */
+  /* left: 0; */
+  /* bottom: 0; */
+}
+
+.q8__text {
+  /* position: absolute; */
+  /* top: -100%; */
+  /* left: 0; */
+  /* グラデーション */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+/*
+【課題】
+・width, hightの指定
+・positionの指定
+・hoverの要素の指定
+*/
 
 /* 回答はここに書いてね */
