@@ -1,5 +1,43 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.q9__content {
+  border: solid 5px #222;
+  border-radius: 30px;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
 
+.q9__content::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  display: block;
+  left: 25px;
+  /* borderは斜めに重なる性質があるため、それを利用して三角形を作る */
+  border-top: solid #222 25px;
+  border-left: solid transparent 25px;
+  border-right: solid transparent 25px;
+  border-bottom: solid transparent 25px;
+  z-index: 1;
+}
+
+.q9__content::after {
+  content: '';
+  position: absolute;
+  bottom: -43px;
+  display: block;
+  left: 25px;
+  border-top: solid #fff 25px;
+  border-left: solid transparent 25px;
+  border-right: solid transparent 25px;
+  border-bottom: solid transparent 25px;
+  z-index: 10;
+}
+.q9__text {
+  font-size: 16px;
+  line-height: 16px;
+}
 /* 回答はここに書いてね */
