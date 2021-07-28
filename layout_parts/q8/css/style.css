@@ -3,38 +3,47 @@
 /* 回答はここに書いてね */
 .q8__content {
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 333px;
+  cursor: pointer;
+}
+.q8__content:hover .q8__img {
+  transform: scale(1.5);
+}
+.q8__content:hover .q8__text-box {
+  bottom: 0;
 }
 
 .q8__img {
   transition: 0.5s all;
 }
-
-.q8__img:hover {
-  transform: scale(1.5, 1.5);
-}
-
-.q8__img:hover + .q8__text {
-  /* position: absolute; */
-  /* left: 0; */
-  /* bottom: 0; */
-}
-
-.q8__text {
-  /* position: absolute; */
-  /* top: -100%; */
-  /* left: 0; */
-  /* グラデーション */
+.q8__text-box {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  /* 背景色を別に付与しないと画像いっぱいにつかない */
+  /* 文字のみにつけると文字の範囲だけに適用されてしまう */
+  /* 上から下へグラデーション */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
+/* textはtext-boxに内包されているからtext-boxへのプロパティ付与だけでhoverじ同時に現れる */
+.q8__text {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  line-height: 16px;
+  transition: 0.5s;
+  color: #fff;
+  box-sizing: border-box;
+  /* 表示範囲に合わせて改行される */
+  word-break: break-all;
+}
 
-/*
-【課題】
-・width, hightの指定
-・positionの指定
-・hoverの要素の指定
-*/
 
 .loader {
   border-radius: 50%;
