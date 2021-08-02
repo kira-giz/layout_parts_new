@@ -4,35 +4,39 @@
 .q3__table {
   width: 100%;
   table-layout: fixed;
-  border: solid #dedede 1px;
 }
 
-td {
-  font-size: 16px;
-  line-height: 22px;
-}
-
+/* headとセルの共通スタイル */
 th,
 td {
-  border: solid #dedede 1px;
+  padding: 10px;
   text-align: center;
-  padding: 10px 0;
+  vertical-align: middle;
+  border: solid #dedede 1px;
 }
 
-tbody tr:nth-child(2n) {
-  background-color: #ecf1f2;
-}
-
+/* 青色のセル */
 th,
 td:first-child {
   background-color: #2244aa;
-  /* white等の指定はしない.#ffffffは省略して書く. */
   color: #fff;
   font-size: 18px;
   line-height: 26px;
 }
 
-tr:last-child:not(.q3__table-head) {
+/* 青くないセル */
+td {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* tbodyの中の偶数番目のセル */
+tbody tr:nth-child(2n) {
+  background-color: #ecf1f2;
+}
+
+/* 合計カロリー上の点線 */
+tr:last-child:not(thead tr) {
   border-top: dashed #000 2px;
 }
 
