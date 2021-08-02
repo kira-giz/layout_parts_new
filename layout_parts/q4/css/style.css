@@ -1,42 +1,55 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.q4 {
+
+/* q4__content */
+.q4__content {
   margin: 0 auto;
+  padding: 20px;
+  background-color: #ecf1f2;
 }
 
-.q4__top,
-.q4__bottom {
+/* q4__table */
+.q4__table {
   width: 100%;
   display: table;
 }
 
-.q4__top div,
-.q4__bottom div {
+.q4__table:first-child {
+  margin-bottom: 20px;
+}
+
+/* 色付きブロック */
+.q4__block {
   padding: 20px 0;
   text-align: center;
   display: table-cell;
+  vertical-align: middle;
 }
 
-.q4__top div:first-child {
+.skin {
   background-color: #fdc8b8;
   width: 100px;
 }
-.q4__top div:nth-child(2) {
+
+.purple {
   background-color: #e0abd9;
 }
-.q4__top div:last-child {
+
+.aqua {
   background-color: #b6d8ed;
   width: 100px;
 }
 
-.q4__bottom div:first-child {
+.yellow {
   background-color: #e5d32e;
 }
-.q4__bottom div:nth-child(2) {
+
+.pink {
   background-color: #ec8f9a;
 }
-.q4__bottom div:last-child {
+
+.green {
   background-color: #8fdcad;
   width: 500px;
 }
