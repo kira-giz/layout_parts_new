@@ -1,7 +1,7 @@
 @charset "UTF-8";
-* {
+/* * {
   outline: 1px solid blue;
-}
+} */
 /* 回答はここに書いてね */
 /* 共通 */
 .common {
@@ -42,34 +42,37 @@
 /* inline-block */
 .inline-block {
   /* inline-block横並びでできる謎余白対策 */
-  font-size: 0;
+  letter-spacing: -0.4em;
 }
 .inline-block__child {
   display: inline-block;
   vertical-align: middle;
+  letter-spacing: normal;
 }
 .inline-block__child:first-child {
   margin-right: 50px;
 }
 
 /* flex */
-.q7--flex__inner {
+.flex {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
 
 /* margin */
-.q7--margin__left,
-.q7--margin__right {
+.margin__stable,
+.margin__flexible {
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
 }
-.q7--margin__left {
+
+.margin__stable {
   width: 300px;
 }
-.q7--margin__right {
+
+.margin__flexible {
   width: 100%;
   /* 左幅と間隔 */
   padding-left: 350px;
