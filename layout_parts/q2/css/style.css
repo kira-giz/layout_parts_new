@@ -1,21 +1,24 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.box__content {
-  box-sizing: border-box;
-  background-color: #eff3f4;
+
+/* box */
+.box__inner {
   width: 940px;
   padding: 20px;
   margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #eff3f4;
 }
 
-.box__img--left {
-  margin: 0 20px 10px 0;
+.box__img--balloon {
   float: left;
+  margin: 0 20px 10px 0;
 }
-.box__img--right {
-  margin: 0 0 10px 20px;
+
+.box__img--light {
   float: right;
+  margin: 0 0 10px 20px;
 }
 
 .box__text {
@@ -23,8 +26,6 @@
   line-height: 22px;
   /* 文字に関係なく折り返し無効 */
   word-break: break-all;
-  /* 要素の横幅に関係なく全ての改行が無効になる */
-  /* white-space: nowrap; */
 }
 
 /* 回答はここに書いてね */
