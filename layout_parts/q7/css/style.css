@@ -1,8 +1,10 @@
 @charset "UTF-8";
-
+* {
+  outline: 1px solid blue;
+}
 /* 回答はここに書いてね */
 /* 共通 */
-.q7__box--all {
+.common {
   width: 225px;
   box-sizing: border-box;
   font-size: 16px;
@@ -14,46 +16,40 @@
 }
 
 /* float */
-.q7__text--left {
+.float__text {
   float: left;
+}
+.float__text:first-child {
   /* 他の要素が横に来ても同じだけの余白が空くから */
   margin-right: 50px;
 }
-.q7__text--right {
-  float: left;
-}
 
 /* table */
-.q7--table__inner {
+.table {
   display: table;
 }
-.q7__box--table--left,
-.q7__box--table--right {
+.cell {
   display: table-cell;
 }
-.q7__box--table--left {
+.cell:first-child {
   vertical-align: middle;
   padding-right: 25px;
 }
-.q7__box--table--right {
+.cell:last-child {
   padding-left: 25px;
 }
 
 /* inline-block */
-.q7--inlineblock__inner {
-  text-align: center;
+.inline-block {
+  /* inline-block横並びでできる謎余白対策 */
+  font-size: 0;
 }
-.q7--inlineblock__left,
-.q7--inlineblock__right {
+.inline-block__child {
   display: inline-block;
   vertical-align: middle;
 }
-/* marginではない謎の余白があるため50pxにするとレイアウトが崩れる */
-.q7--inlineblock__left {
-  margin-right: 45px;
-}
-.q7--inlineblock__right {
-  margin-left: 0;
+.inline-block__child:first-child {
+  margin-right: 50px;
 }
 
 /* flex */
