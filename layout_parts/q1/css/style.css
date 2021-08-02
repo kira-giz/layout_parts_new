@@ -2,17 +2,20 @@
 
 /* 回答はここに書いてね */
 
-.text-box {
-  background-color: #eff3f4;
-  width: 940px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* 共通 */
 .clearfix::after {
   content: '';
   clear: both;
   display: block;
+}
+
+/* text-box */
+.text-box {
+  background-color: #eff3f4;
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .text-box__li {
@@ -20,12 +23,12 @@
   padding: 20px;
   float: left;
   margin-left: 20px;
+  width: 230px;
 }
 
 .text-box__li:first-child {
   margin-left: 0;
 }
-
 
 .text-box__text {
   box-sizing: border-box;
@@ -34,8 +37,6 @@
   background-color: #eaf4ff;
   font-size: 16px;
   line-height: 16px;
-  width: 230px;
 }
-
 
 /* 回答はここに書いてね */
