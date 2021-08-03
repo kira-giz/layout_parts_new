@@ -10,32 +10,31 @@
   position: relative;
 }
 
-/* 重ねる三角 */
-.q9__content::before {
+/* 吹き出し共通 */
+.q9__content::before,
+.q9__content::after {
   content: '';
   position: absolute;
-  bottom: -43px;
   display: block;
-  left: 25px;
-  border-top: solid #fff 25px;
   border-left: solid transparent 25px;
   border-right: solid transparent 25px;
   border-bottom: solid transparent 25px;
+}
+
+/* 上から重ねる白 */
+.q9__content::before {
+  bottom: -43px;
+  left: 25px;
+  border-top: solid #fff 25px;
   z-index: 10;
 }
 
 /* 吹き出し本体 */
 .q9__content::after {
-  content: '';
-  position: absolute;
   bottom: -50px;
-  display: block;
   left: 25px;
   /* borderは斜めに重なる性質があるため、それを利用して三角形を作る */
   border-top: solid #222 25px;
-  border-left: solid transparent 25px;
-  border-right: solid transparent 25px;
-  border-bottom: solid transparent 25px;
   z-index: 1;
 }
 

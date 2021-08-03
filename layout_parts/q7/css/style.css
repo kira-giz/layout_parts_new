@@ -1,8 +1,6 @@
 @charset "UTF-8";
-/* * {
-  outline: 1px solid blue;
-} */
 /* 回答はここに書いてね */
+
 /* 共通 */
 .common {
   width: 225px;
@@ -19,9 +17,9 @@
 .float__text {
   float: left;
 }
-.float__text:first-child {
+.float__text:last-child {
   /* 他の要素が横に来ても同じだけの余白が空くから */
-  margin-right: 50px;
+  margin-left: 50px;
 }
 
 /* table */
@@ -49,8 +47,8 @@
   vertical-align: middle;
   letter-spacing: normal;
 }
-.inline-block__child:first-child {
-  margin-right: 50px;
+.inline-block__child:last-child {
+  margin-left: 50px;
 }
 
 /* flex */
