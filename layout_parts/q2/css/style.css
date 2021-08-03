@@ -2,6 +2,12 @@
 
 /* 回答はここに書いてね */
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* box */
 .box__inner {
   width: 940px;
@@ -27,5 +33,4 @@
   /* 文字に関係なく折り返し無効 */
   word-break: break-all;
 }
-
 /* 回答はここに書いてね */

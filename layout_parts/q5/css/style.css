@@ -21,12 +21,12 @@
   line-height: 100px;
 }
 
-.q5__block:not(:nth-child(9)) {
+.q5__block:not(.fixed) {
   position: absolute;
 }
 
 /* 1 */
-.q5__block:nth-child(3) {
+.aqua {
   background-color: #ffefd3;
   left: 200px;
   top: 40px;
@@ -34,7 +34,7 @@
 }
 
 /* 2 */
-.q5__block:nth-child(7) {
+.light-brown {
   background-color: #7084de;
   top: 120px;
   left: 280px;
@@ -42,7 +42,7 @@
 }
 
 /* 3 */
-.q5__block:nth-child(8) {
+.pink {
   background-color: #d0ecea;
   top: 200px;
   left: 360px;
@@ -50,7 +50,7 @@
 }
 
 /* 4 */
-.q5__block:nth-child(5) {
+.turquoise {
   background-color: #8b7a5e;
   top: 280px;
   left: 280px;
@@ -58,7 +58,7 @@
 }
 
 /* 5 */
-.q5__block:nth-child(2) {
+.purple {
   background-color: #9fd6d2;
   top: 360px;
   left: 200px;
@@ -66,7 +66,7 @@
 }
 
 /* 6 */
-.q5__block:nth-child(6) {
+.white {
   background-color: #fffee4;
   top: 280px;
   left: 120px;
@@ -74,7 +74,7 @@
 }
 
 /* 7 */
-.q5__block:nth-child(4) {
+.brown {
   background-color: #deae70;
   top: 200px;
   left: 40px;
@@ -82,14 +82,14 @@
 }
 
 /* 8 */
-.q5__block:first-child {
+.skin {
   background-color: #de70cf;
   top: 120px;
   left: 120px;
   z-index: 8;
 }
 
-.q5__block:first-child::before {
+.skin::before {
   content: '';
   background-color: #ffefd3;
   width: 20px;
@@ -100,9 +100,8 @@
   z-index: 9;
 }
 
-
 /* 9 */
-.q5__block:nth-child(9) {
+.fixed {
   background-color: #2b69a3;
   /* fixedはwindow全体が位置の基準 */
   position: fixed;

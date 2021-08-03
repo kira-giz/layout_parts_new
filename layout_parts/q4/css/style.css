@@ -15,7 +15,7 @@
   display: table;
 }
 
-.q4__table:last-child {
+.q4__table:not(:first-child) {
   margin-top: 20px;
 }
 

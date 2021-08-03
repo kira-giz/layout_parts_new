@@ -7,8 +7,7 @@
 }
 
 /* headとセルの共通スタイル */
-th,
-td {
+.q3__table th, td {
   padding: 10px;
   text-align: center;
   vertical-align: middle;
@@ -16,8 +15,7 @@ td {
 }
 
 /* 青色のセル */
-th,
-td:first-child {
+.q3__table th {
   background-color: #2244aa;
   color: #fff;
   font-size: 18px;
@@ -25,18 +23,18 @@ td:first-child {
 }
 
 /* 青くないセル */
-td {
+.q3__table td {
   font-size: 16px;
   line-height: 22px;
 }
 
 /* tbodyの中の偶数番目のセル */
-tbody tr:nth-child(2n) {
+.q3__table tbody tr:nth-child(2n) {
   background-color: #ecf1f2;
 }
 
 /* 合計カロリー上の点線 */
-tr:last-child:not(thead tr) {
+.q3__table tbody tr:last-child {
   border-top: dashed #000 2px;
 }
 
