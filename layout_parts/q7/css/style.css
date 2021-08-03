@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
 .clearfix::after {
   display: block;
   content: '';
@@ -17,8 +18,8 @@
 .float__text {
   float: left;
 }
-.float__text:last-child {
-  /* 他の要素が横に来ても同じだけの余白が空くから */
+
+.float__text:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -26,28 +27,34 @@
 .table {
   display: table;
 }
+
 .cell {
   display: table-cell;
+  padding-left: 50px;
 }
+
 .cell:first-child {
-  vertical-align: middle;
-  padding-right: 25px;
+  padding: 0;
 }
-.cell:last-child {
-  padding-left: 25px;
+
+.vertical-middle {
+  vertical-align: middle;
 }
 
 /* inline-block */
 .inline-block {
-  /* inline-block横並びでできる謎余白対策 */
+  /* 謎余白対策 */
   letter-spacing: -0.4em;
 }
+
 .inline-block__child {
   display: inline-block;
   vertical-align: middle;
+  /* 謎余白対策 */
   letter-spacing: normal;
 }
-.inline-block__child:last-child {
+
+.inline-block__child:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -58,9 +65,9 @@
   align-items: flex-end;
 }
 
-/* margin */
-.margin__stable,
-.margin__flexible {
+/* ネガティブmargin */
+/* 共通 */
+.margin__block {
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;

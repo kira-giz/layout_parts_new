@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+
 /* transition */
 .q8__content {
   margin: 0 auto;
@@ -12,7 +13,7 @@
   cursor: pointer;
 }
 
-.q8__content:hover .q8__img {
+.q8__content:hover .q8__thumb {
   transform: scale(1.5);
 }
 
@@ -20,7 +21,7 @@
   bottom: 0;
 }
 
-.q8__img {
+.q8__thumb {
   transition: 0.5s all;
 }
 

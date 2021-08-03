@@ -7,7 +7,8 @@
 }
 
 /* headとセルの共通スタイル */
-.q3__table th, td {
+.q3__table th,
+.q3__table td {
   padding: 10px;
   text-align: center;
   vertical-align: middle;

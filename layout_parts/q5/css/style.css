@@ -19,9 +19,6 @@
   font-size: 28px;
   text-align: center;
   line-height: 100px;
-}
-
-.q5__block:not(.fixed) {
   position: absolute;
 }
 
@@ -103,6 +100,7 @@
 .blue {
   background-color: #2b69a3;
 }
+
 /* 9 */
 .fixed {
   /* fixedはwindow全体が位置の基準 */
@@ -110,6 +108,5 @@
   top: 10px;
   left: 10px;
 }
-
 
 /* 回答はここに書いてね */
