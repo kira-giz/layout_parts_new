@@ -100,9 +100,11 @@
   z-index: 9;
 }
 
+.blue {
+  background-color: #2b69a3;
+}
 /* 9 */
 .fixed {
-  background-color: #2b69a3;
   /* fixedはwindow全体が位置の基準 */
   position: fixed;
   top: 10px;
