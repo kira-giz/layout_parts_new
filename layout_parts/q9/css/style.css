@@ -15,7 +15,6 @@
 .q9__content::after {
   content: '';
   position: absolute;
-  display: block;
   border: solid transparent 25px;
 }
 
@@ -23,7 +22,7 @@
 .q9__content::before {
   bottom: -43px;
   left: 25px;
-  border-top: solid #fff 25px;
+  border-top-color: #fff;
   z-index: 10;
 }
 
@@ -31,7 +30,7 @@
 .q9__content::after {
   bottom: -50px;
   left: 25px;
-  border-top: solid #222 25px;
+  border-top-color: #222;
   z-index: 1;
 }
 

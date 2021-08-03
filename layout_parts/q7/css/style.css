@@ -19,8 +19,12 @@
   float: left;
 }
 
-.float__text:not(:first-child) {
+.float__text {
   margin-left: 50px;
+}
+
+.float__text:first-child {
+  margin-left: 0;
 }
 
 /* table */
@@ -71,6 +75,7 @@
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
+  font-size: 16px;
 }
 
 .margin__stable {
