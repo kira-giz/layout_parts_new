@@ -15,8 +15,8 @@
   display: table;
 }
 
-.q4__table:first-child {
-  margin-bottom: 20px;
+.q4__table:last-child {
+  margin-top: 20px;
 }
 
 /* 色付きブロック */

@@ -9,14 +9,13 @@
   margin: 0 auto;
   background-color: #ecf1f2;
   position: relative;
-  z-index: -1;
 }
 
-/* q5__block全体 */
+/* q5__block共通 */
 .q5__block {
   width: 100px;
   height: 100px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   text-align: center;
   line-height: 100px;
