@@ -16,9 +16,7 @@
   content: '';
   position: absolute;
   display: block;
-  border-left: solid transparent 25px;
-  border-right: solid transparent 25px;
-  border-bottom: solid transparent 25px;
+  border: solid transparent 25px;
 }
 
 /* 上から重ねる白 */
@@ -33,7 +31,6 @@
 .q9__content::after {
   bottom: -50px;
   left: 25px;
-  /* borderは斜めに重なる性質があるため、それを利用して三角形を作る */
   border-top: solid #222 25px;
   z-index: 1;
 }
