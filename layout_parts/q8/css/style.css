@@ -3,6 +3,10 @@
 /* 回答はここに書いてね */
 
 /* transition */
+.trans-all {
+  transition: 0.5s all;
+}
+
 .q8__content {
   margin: 0 auto;
   position: relative;
@@ -21,10 +25,6 @@
   bottom: 0;
 }
 
-.q8__thumb {
-  transition: 0.5s all;
-}
-
 .q8__text-box {
   position: absolute;
   bottom: -100%;
@@ -32,7 +32,6 @@
   width: 100%;
   /* 背景色を親要素に付与しないと画像いっぱいにつかない */
   height: 100%;
-  transition: 0.5s;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
@@ -41,7 +40,6 @@
   position: absolute;
   bottom: 0;
   line-height: 16px;
-  transition: 0.5s;
   color: #fff;
   box-sizing: border-box;
   /* 表示範囲に合わせて改行される */
