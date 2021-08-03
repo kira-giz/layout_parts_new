@@ -10,7 +10,22 @@
   position: relative;
 }
 
+/* 重ねる三角 */
 .q9__content::before {
+  content: '';
+  position: absolute;
+  bottom: -43px;
+  display: block;
+  left: 25px;
+  border-top: solid #fff 25px;
+  border-left: solid transparent 25px;
+  border-right: solid transparent 25px;
+  border-bottom: solid transparent 25px;
+  z-index: 10;
+}
+
+/* 吹き出し本体 */
+.q9__content::after {
   content: '';
   position: absolute;
   bottom: -50px;
@@ -24,18 +39,6 @@
   z-index: 1;
 }
 
-.q9__content::after {
-  content: '';
-  position: absolute;
-  bottom: -43px;
-  display: block;
-  left: 25px;
-  border-top: solid #fff 25px;
-  border-left: solid transparent 25px;
-  border-right: solid transparent 25px;
-  border-bottom: solid transparent 25px;
-  z-index: 10;
-}
 .q9__text {
   font-size: 16px;
   line-height: 16px;
