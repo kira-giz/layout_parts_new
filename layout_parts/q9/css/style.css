@@ -18,20 +18,18 @@
   border: solid transparent 25px;
 }
 
-/* 上から重ねる白 */
-.q9__content::before {
-  bottom: -43px;
-  left: 25px;
-  border-top-color: #fff;
-  z-index: 10;
-}
-
 /* 吹き出し本体 */
-.q9__content::after {
+.q9__content::before {
   bottom: -50px;
   left: 25px;
   border-top-color: #222;
-  z-index: 1;
+}
+
+/* 上から重ねる白 */
+.q9__content::after {
+  bottom: -43px;
+  left: 25px;
+  border-top-color: #fff;
 }
 
 .q9__text {

@@ -45,14 +45,12 @@
 /* inline-block */
 .inline-block {
   /* 謎余白対策 */
-  letter-spacing: -0.4em;
+  font-size: 0;
 }
 
 .inline-block__child {
   display: inline-block;
   vertical-align: middle;
-  /* 謎余白対策 */
-  letter-spacing: normal;
   margin-left: 50px;
 }
 
@@ -68,9 +66,14 @@
 }
 
 /* ネガティブmargin */
+.margin {
+  font-size: 0;
+}
+
 .margin__block {
   vertical-align: top;
   display: inline-block;
+
 }
 
 .margin__text {
