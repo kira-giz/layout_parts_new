@@ -17,9 +17,6 @@
 /* float */
 .float__text {
   float: left;
-}
-
-.float__text {
   margin-left: 50px;
 }
 
@@ -38,7 +35,7 @@
 }
 
 .cell:first-child {
-  padding: 0;
+  padding-left: 0;
 }
 
 .vertical-middle {
@@ -56,10 +53,11 @@
   vertical-align: middle;
   /* 謎余白対策 */
   letter-spacing: normal;
+  margin-left: 50px;
 }
 
-.inline-block__child:not(:first-child) {
-  margin-left: 50px;
+.inline-block__child:first-child {
+  margin-left: 0;
 }
 
 /* flex */
@@ -70,11 +68,12 @@
 }
 
 /* ネガティブmargin */
-/* 共通 */
 .margin__block {
-  display: inline-block;
-  box-sizing: border-box;
   vertical-align: top;
+  display: inline-block;
+}
+
+.margin__text {
   font-size: 16px;
 }
 
@@ -84,8 +83,8 @@
 
 .margin__flexible {
   width: 100%;
-  /* 左幅と間隔 */
-  padding-left: 350px;
+  box-sizing: border-box;
   margin-left: -305px;
+  padding-left: 350px;
 }
 /* 回答はここに書いてね */
